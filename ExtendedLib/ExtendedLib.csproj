@@ -1,0 +1,39 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <AssemblyName>DotNetExtras.Extended</AssemblyName>
+    <RootNamespace>DotNetExtras.Extended</RootNamespace>
+    <Version>1.0.0</Version>
+    <Title>$(AssemblyName)</Title>
+    <Authors>Alek Davis</Authors>
+    <Description>A .NET Core library implementing less frequently used general-purpose operations.</Description>
+    <Copyright>© 2025 Alek Davis</Copyright>
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+    <PackageId>$(AssemblyName)</PackageId>
+    <PackageProjectUrl>https://alekdavis.github.io/dotnet-extras-extended</PackageProjectUrl>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <RepositoryUrl>https://github.com/alekdavis/dotnet-extras-extended</RepositoryUrl>
+    <PackageTags>.net;utilities;helpers;library;classes;tools;toolbox</PackageTags>
+    <GenerateDocumentationFile>True</GenerateDocumentationFile>
+    <IncludeSourceRevisionInInformationalVersion>False</IncludeSourceRevisionInInformationalVersion>
+    <IncludeSymbols>True</IncludeSymbols>
+    <SymbolPackageFormat>snupkg</SymbolPackageFormat>
+    <PackageReleaseNotes>Added options to mask JSON properties during serialization.</PackageReleaseNotes>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="..\README.md">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="DeepCloner" Version="0.10.4" />
+    <PackageReference Include="DotNetExtras.Common" Version="1.0.5" />
+  </ItemGroup>
+
+</Project>
