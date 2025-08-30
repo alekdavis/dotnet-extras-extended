@@ -11,13 +11,6 @@ Use the `DotNetExtras.Extended` library to:
 - Convert a string to a different data type, such as <c>DateTime</c>.
 - Convert a tokenized string to an array, dictionary, list, or hash set.
 
-## Documentation
-
-For complete documentation, usage details, and code samples, see:
-
-- [Documentation](https://alekdavis.github.io/dotnet-extras-extended)
-- [Unit tests](https://github.com/alekdavis/dotnet-extras-extended/tree/main/ExtendedTests)
-
 ## Usage
 
 The following examples illustrates various operations implemented by the `DotNetExtras.Extended` library.
@@ -105,6 +98,13 @@ Sample match = new() { ParentId = 2 };
 // Removes two items with ParentId = 2.
 int removedCount = elements.RemoveMatching(match);
 ```
+
+## Documentation
+
+For complete documentation, usage details, and code samples, see:
+
+- [Documentation](https://alekdavis.github.io/dotnet-extras-extended)
+- [Unit tests](https://github.com/alekdavis/dotnet-extras-extended/tree/main/ExtendedTests)
 
 ## Package
 
