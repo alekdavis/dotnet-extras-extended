@@ -25,7 +25,7 @@
         </para>
         <list class="ordered">
           <listItem>
-            <para>Deep cloning objects (this method uses an external library).</para>
+            <para>Deep cloning objects (relies on an external library).</para>
           </listItem>
           <listItem>
             <para>Checking if objects or variables are equivalent (not the same as equal, since different data types, such as <c>int</c> and <c>long</c> will never be considered equal even if they hold the same value).</para>
@@ -45,7 +45,7 @@
           <title>Implementation</title>
             <content>
               <para>
-                This library has some external dependencies for specific tasks. For example the deep cloning method uses the <externalLink>
+                This library has some external dependencies for certain tasks. For example, the deep cloning method uses the <externalLink>
                   <linkText>DeepCloner</linkText>
                   <linkUri>https://www.nuget.org/packages/DeepCloner</linkUri>
                   <linkTarget>_blank</linkTarget></externalLink>
@@ -60,6 +60,66 @@
               <para>
                The following examples illustrates how to use various extension methods implemented by the <legacyItalic>DotNetExtras.Extended</legacyItalic> library.
               </para>
+              
+              <code language="cs" title="Convert string values to simple data types">
+<![CDATA[
+using DotNetExtras.Extended;
+...
+bool b = "true".ToType<bool>();
+int n = "123".ToType<int>();
+DateTime dt = "2021-10-11T17:54:38".ToType<DateTime>();
+DateTimeOffset dto = "2021-10-11T17:54:38-03:30".ToType<DateTimeOffset>();
+]]>
+              </code>
+              
+              <code language="cs" title="Convert string values to arrays, lists, dictionaries, has sets">
+<![CDATA[
+using DotNetExtras.Extended;
+...
+// Will hold: value1, value2, value3
+string[] result = "value1|value2|value3".ToArray<string>(); 
+
+// Will hold: value1, value2, value3
+List<string> list = "value1|value2|value3".ToList<string>();
+
+// Will hold: key1=value1, key2=value2
+Dictionary<string,string> result = "key1=value1|key2=value2".ToDictionary<string, string>();
+
+// Will hold: [1, 2, 3]
+HashSet<int>? hashSet = "1|2|3".ToHashSet();
+
+// Will hold: ["one", "two", "three"]
+HashSet<string>? hashSet = "one,two,three".ToHashSet(",");
+]]>
+              </code>
+              
+              <code language="cs" title="Check if string contains a valid JSON or HTML document">
+<![CDATA[
+using DotNetExtras.Extended;
+...
+bool isJson;
+
+// This test can handle both a single element and an array.
+isJson = "{\"key1\": \"value1\", \"key2\": \"value2\"}".IsJson(); // true
+isJson = "[{\"key1\": \"value1\"}, {\"key2\": \"value2\", \"key3\": 123}]".IsJson(); // true
+
+bool isHtml;
+
+// This test only checks if the string starts with the html tag.
+isHtml = "<!DOCTYPE html>hello</html>".IsHtml(); // true
+isHtml = "<html>hello</html>".IsHtml(); // true
+]]>
+              </code>
+              
+              <code language="cs" title="Escape special LDAP characters in a string">
+<![CDATA[
+using DotNetExtras.Extended;
+...
+// Will hold:
+string escaped = "Hello, world!".EscapeLdapValue();
+]]>
+              </code>
+                            
               <code language="cs" title="Deep clone an object">
 <![CDATA[
 using DotNetExtras.Extended;
@@ -68,6 +128,22 @@ User clone = original.Clone();
 ]]>
               </code>
 
+              <code language="c#" title="Remove elements from the list">
+<![CDATA[
+List<Sample> elements = new()
+{
+    new(){ Id = 100, ParentId = 1, Name = "Item1" },
+    new(){ Id = 200, ParentId = 2, Name = "Item2" },
+    new(){ Id = 300, ParentId = 2, Name = "Item3" },
+    new(){ Id = 400, ParentId = 3, Name = "Item4" }
+};
+
+Sample match = new() { ParentId = 2 };
+
+// Removes two items with ParentId = 2.
+int removedCount = elements.RemoveMatching(match);
+]]>
+              </code>
               <para>             
                 For the complete example and other samples covering additional scenarios, see the source code (and read the comments) of the 
                 <externalLink>

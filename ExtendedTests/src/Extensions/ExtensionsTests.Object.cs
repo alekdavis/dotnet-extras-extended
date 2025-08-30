@@ -1,7 +1,7 @@
-using CommonLibTests.Models;
+using ExtendedLibTests.Models;
 using DotNetExtras.Extended;
 
-namespace CommonLibTests;
+namespace ExtendedLibTests;
 
 public partial class ExtensionsTests
 {

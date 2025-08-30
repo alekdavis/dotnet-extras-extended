@@ -17,12 +17,16 @@ public static partial class IListExtensions
     /// <param name="elementToMatch">
     /// Item holding property values that will need to match for the list elements to be removed.
     /// </param>
+    /// <param name="includeNonPublic">
+    /// If <c>true</c>, non-public properties and fields will be checked along with the public properties and fields.
+    /// </param>
     /// <returns>
-    /// Number of elements remove.
+    /// Number of removed elements.
     /// </returns>
     /// <example>
     /// <code>
-    /// List&lt;Sample&gt; elements = new()
+    /// <![CDATA[
+    /// List<Sample> elements = new()
     /// {
     ///     new(){ Id = 100, ParentId = 1, Name = "Item1" },
     ///     new(){ Id = 200, ParentId = 2, Name = "Item2" },
@@ -34,12 +38,14 @@ public static partial class IListExtensions
     ///
     /// // Removes two items:
     /// int removedCount = elements.RemoveMatching(match);
+    /// ]]>
     /// </code>
     /// </example>
     public static int RemoveMatching
     (
         this IList elements, 
-        object elementToMatch
+        object elementToMatch,
+        bool includeNonPublic = false
     )
     {
         int removed = 0;
@@ -54,7 +60,7 @@ public static partial class IListExtensions
                 continue;
             }
 
-            if (elementToMatch.IsPartiallyEquivalentTo(elements[i]))
+            if (elementToMatch.IsPartiallyEquivalentTo(elements[i], includeNonPublic))
             {
                 elements.RemoveAt(i);
                 removed++;

@@ -25,10 +25,12 @@ public static partial class StringExtensions
     /// </returns>
     /// <example>
     /// <code>
-    /// bool b = "true".ToType&lt;bool&gt;();
-    /// int n = "123".ToType&lt;int&gt;();
-    /// DateTime dt = "2021-10-11T17:54:38".ToType&lt;DateTime&gt;();
-    /// DateTimeOffset dto = "2021-10-11T17:54:38-03:30".ToType&lt;DateTimeOffset&gt;();
+    /// <![CDATA[
+    /// bool b = "true".ToType<bool>();
+    /// int n = "123".ToType<int>();
+    /// DateTime dt = "2021-10-11T17:54:38".ToType<DateTime>();
+    /// DateTimeOffset dto = "2021-10-11T17:54:38-03:30".ToType<DateTimeOffset>();
+    /// ]]>
     /// </code>
     /// </example>
     public static T ToType<T>
@@ -193,8 +195,10 @@ public static partial class StringExtensions
     /// </returns>
     /// <example>
     /// <code>
-    /// // Will hold: key1=value1, key2=value2
-    /// List&lt;string&gt; result = "value1|value2|value3".ToList&lt;string&gt;();
+    /// <![CDATA[
+    /// // Will hold: value1, value2, value3
+    /// List<string> result = "value1|value2|value3".ToList<string>();
+    /// ]]>
     /// </code>
     /// </example>    
     public static List<T>? ToList<T>
@@ -243,8 +247,10 @@ public static partial class StringExtensions
     /// </returns>
     /// <example>
     /// <code>
-    /// // Will hold: key1=value1, key2=value2
-    /// string[] result = "value1|value2|value3".ToArray&lt;string&gt;();
+    /// <![CDATA[
+    /// // Will hold: value1, value2, value3
+    /// string[] result = "value1|value2|value3".ToArray<string>(); 
+    /// ]]>
     /// </code>
     /// </example>
     public static T[]? ToArray<T>
@@ -287,8 +293,10 @@ public static partial class StringExtensions
     /// </returns>
     /// <example>
     /// <code>
+    /// <![CDATA[
     /// // Will hold: key1=value1, key2=value2
-    /// Dictionary&lt;string,string&gt; result = "key1=value1|key2=value2".ToDictionary&lt;string, string&gt;();
+    /// Dictionary<string,string> result = "key1=value1|key2=value2".ToDictionary<string, string>();
+    /// ]]>
     /// </code>
     /// </example>
     public static Dictionary<TKey,TValue>? ToDictionary<TKey,TValue>
@@ -366,11 +374,13 @@ public static partial class StringExtensions
     /// </returns>
     /// <example>
     /// <code>
+    /// <![CDATA[
     /// // Will hold: [1, 2, 3]
-    /// HashSet&lt;int&gt;? hashSet = "1|2|3".ToHashSet();
+    /// HashSet<int>? hashSet = "1|2|3".ToHashSet();
     /// 
     /// // Will hold: ["one", "two", "three"]
-    /// HashSet&lt;string&gt;? hashSet = "one,two,three".ToHashSet(",");
+    /// HashSet<string>? hashSet = "one,two,three".ToHashSet(",");
+    /// ]]>
     /// </code>
     /// </example>
     public static HashSet<T>? ToHashSet<T>
@@ -408,8 +418,18 @@ public static partial class StringExtensions
     /// String to test.
     /// </param>
     /// <returns>
-    /// True if the string is a valid JSON, otherwise false.
+    /// <c>true</c> if the string contains a valid JSON string; otherwise, <c>false</c>.
     /// </returns>
+    /// <example>
+    /// <code>
+    /// <![CDATA[
+    /// bool isJson;
+    /// 
+    /// isJson = "{\"key1\": \"value1\", \"key2\": \"value2\"}".IsJson(); // true
+    /// isJson = "[{\"key1\": \"value1\"}, {\"key2\": \"value2\", \"key3\": 123}]".IsJson(); // true
+    /// ]]>
+    /// </code>
+    /// </example>
     public static bool IsJson
     (
         this string? source
@@ -432,18 +452,30 @@ public static partial class StringExtensions
     }
 
     /// <summary>
-    /// Checks if the string contains an HTML document.
+    /// Checks if the string contains a valid HTML document.
     /// </summary>
     /// <remarks>
-    /// A valid HTML document assumes that test starts with 
-    /// either `&lt;!DOCTYPE html&gt;` or `&lt;html&gt;` tag.
+    /// This function does not validate the entire HTML document,
+    /// nor does it check HTML tags.
+    /// It expects a valid HTML document to start with either 
+    /// `&lt;!DOCTYPE html&gt;` or `&lt;html&gt;` 
+    /// (ignoring white space).
     /// </remarks>
     /// <param name="source">
     /// String to test.
     /// </param>
     /// <returns>
-    /// True if the string contains a valid HTML document, otherwise false.
+    /// <c>true</c> if the string contains a valid HTML document; otherwise, <c>false</c>.
     /// </returns>
+    /// <example>
+    /// <code>
+    /// <![CDATA[
+    /// bool isHtml;
+    /// isHtml = "<!DOCTYPE html>hello</html>".IsHtml(); // true
+    /// isHtml = "<html>hello</html>".IsHtml(); // true
+    /// ]]>
+    /// </code>
+    /// </example>
     public static bool IsHtml
     (
         this string? source

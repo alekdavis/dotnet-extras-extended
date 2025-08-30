@@ -1,0 +1,1046 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<reflection>
+  <assemblies>
+    <assembly name="DotNetExtras.Extended">
+      <assemblydata version="1.0.1.0" culture="" key="" hash="SHA1" />
+      <attributes>
+        <attribute>
+          <type api="T:System.Runtime.CompilerServices.ExtensionAttribute" ref="true" />
+        </attribute>
+        <attribute>
+          <type api="T:System.Reflection.AssemblyCompanyAttribute" ref="true" />
+          <argument>
+            <type api="T:System.String" ref="true" />
+            <value>Alek Davis</value>
+          </argument>
+        </attribute>
+        <attribute>
+          <type api="T:System.Reflection.AssemblyConfigurationAttribute" ref="true" />
+          <argument>
+            <type api="T:System.String" ref="true" />
+            <value>Debug</value>
+          </argument>
+        </attribute>
+        <attribute>
+          <type api="T:System.Reflection.AssemblyCopyrightAttribute" ref="true" />
+          <argument>
+            <type api="T:System.String" ref="true" />
+            <value>© 2025 Alek Davis</value>
+          </argument>
+        </attribute>
+        <attribute>
+          <type api="T:System.Reflection.AssemblyDescriptionAttribute" ref="true" />
+          <argument>
+            <type api="T:System.String" ref="true" />
+            <value>A .NET Core library implementing less frequently used general-purpose operations.</value>
+          </argument>
+        </attribute>
+        <attribute>
+          <type api="T:System.Reflection.AssemblyFileVersionAttribute" ref="true" />
+          <argument>
+            <type api="T:System.String" ref="true" />
+            <value>1.0.1.0</value>
+          </argument>
+        </attribute>
+        <attribute>
+          <type api="T:System.Reflection.AssemblyInformationalVersionAttribute" ref="true" />
+          <argument>
+            <type api="T:System.String" ref="true" />
+            <value>1.0.1</value>
+          </argument>
+        </attribute>
+        <attribute>
+          <type api="T:System.Reflection.AssemblyProductAttribute" ref="true" />
+          <argument>
+            <type api="T:System.String" ref="true" />
+            <value>DotNetExtras.Extended</value>
+          </argument>
+        </attribute>
+        <attribute>
+          <type api="T:System.Reflection.AssemblyTitleAttribute" ref="true" />
+          <argument>
+            <type api="T:System.String" ref="true" />
+            <value>DotNetExtras.Extended</value>
+          </argument>
+        </attribute>
+        <attribute>
+          <type api="T:System.Reflection.AssemblyMetadataAttribute" ref="true" />
+          <argument>
+            <type api="T:System.String" ref="true" />
+            <value>RepositoryUrl</value>
+          </argument>
+          <argument>
+            <type api="T:System.String" ref="true" />
+            <value>https://github.com/alekdavis/dotnet-extras-extended</value>
+          </argument>
+        </attribute>
+      </attributes>
+    </assembly>
+  </assemblies>
+  <apis>
+    <api id="N:DotNetExtras.Extended">
+      <topicdata group="api" />
+      <apidata name="DotNetExtras.Extended" group="namespace" />
+      <elements>
+        <element api="T:DotNetExtras.Extended.DictionaryExtensions" />
+        <element api="T:DotNetExtras.Extended.IListExtensions" />
+        <element api="T:DotNetExtras.Extended.IntegerExtensions" />
+        <element api="T:DotNetExtras.Extended.ObjectExtensions" />
+        <element api="T:DotNetExtras.Extended.StringExtensions" />
+      </elements>
+      <file name="N_DotNetExtras_Extended" />
+    </api>
+    <api id="T:DotNetExtras.Extended.DictionaryExtensions">
+      <topicdata group="api" />
+      <apidata name="DictionaryExtensions" group="type" subgroup="class" />
+      <typedata visibility="public" abstract="true" sealed="true" serializable="false" />
+      <family>
+        <ancestors>
+          <type api="T:System.Object" ref="true" />
+        </ancestors>
+      </family>
+      <elements>
+        <element api="M:DotNetExtras.Extended.DictionaryExtensions.ToDynamic(System.Collections.Generic.Dictionary{System.String,System.Object})" />
+      </elements>
+      <containers>
+        <library assembly="DotNetExtras.Extended" module="DotNetExtras.Extended" kind="DynamicallyLinkedLibrary">
+          <assemblydata version="1.0.1" />
+        </library>
+        <namespace api="N:DotNetExtras.Extended" />
+      </containers>
+      <attributes>
+        <attribute>
+          <type api="T:System.Runtime.CompilerServices.ExtensionAttribute" ref="true" />
+        </attribute>
+      </attributes>
+      <file name="T_DotNetExtras_Extended_DictionaryExtensions" />
+    </api>
+    <api id="Methods.T:DotNetExtras.Extended.DictionaryExtensions">
+      <topicdata name="DictionaryExtensions" group="list" subgroup="Methods" typeTopicId="T:DotNetExtras.Extended.DictionaryExtensions" />
+      <apidata name="DictionaryExtensions" group="type" subgroup="class" />
+      <typedata visibility="public" abstract="true" sealed="true" serializable="false" />
+      <elements>
+        <element api="M:DotNetExtras.Extended.DictionaryExtensions.ToDynamic(System.Collections.Generic.Dictionary{System.String,System.Object})" />
+      </elements>
+      <containers>
+        <library assembly="DotNetExtras.Extended" module="DotNetExtras.Extended" kind="DynamicallyLinkedLibrary">
+          <assemblydata version="1.0.1" />
+        </library>
+        <namespace api="N:DotNetExtras.Extended" />
+        <type api="T:DotNetExtras.Extended.DictionaryExtensions" />
+      </containers>
+      <file name="Methods_T_DotNetExtras_Extended_DictionaryExtensions" />
+    </api>
+    <api id="M:DotNetExtras.Extended.DictionaryExtensions.ToDynamic(System.Collections.Generic.Dictionary{System.String,System.Object})">
+      <topicdata group="api" />
+      <apidata name="ToDynamic" group="member" subgroup="method" />
+      <memberdata visibility="public" static="true" />
+      <proceduredata virtual="false" />
+      <parameters>
+        <parameter name="source">
+          <type api="T:System.Collections.Generic.Dictionary`2" ref="true">
+            <specialization>
+              <type api="T:System.String" ref="true" />
+              <type nullable="true" api="T:System.Object" ref="true" />
+            </specialization>
+          </type>
+        </parameter>
+      </parameters>
+      <returns>
+        <type api="T:System.Object" ref="true" />
+      </returns>
+      <containers>
+        <library assembly="DotNetExtras.Extended" module="DotNetExtras.Extended" kind="DynamicallyLinkedLibrary">
+          <assemblydata version="1.0.1" />
+          <noAptca />
+        </library>
+        <namespace api="N:DotNetExtras.Extended" />
+        <type api="T:DotNetExtras.Extended.DictionaryExtensions" ref="true" />
+      </containers>
+      <attributes>
+        <attribute>
+          <type api="T:System.Runtime.CompilerServices.ExtensionAttribute" ref="true" />
+        </attribute>
+      </attributes>
+      <file name="M_DotNetExtras_Extended_DictionaryExtensions_ToDynamic" />
+    </api>
+    <api id="T:DotNetExtras.Extended.IListExtensions">
+      <topicdata group="api" />
+      <apidata name="IListExtensions" group="type" subgroup="class" />
+      <typedata visibility="public" abstract="true" sealed="true" serializable="false" />
+      <family>
+        <ancestors>
+          <type api="T:System.Object" ref="true" />
+        </ancestors>
+      </family>
+      <elements>
+        <element api="M:DotNetExtras.Extended.IListExtensions.RemoveMatching(System.Collections.IList,System.Object,System.Boolean)" />
+      </elements>
+      <containers>
+        <library assembly="DotNetExtras.Extended" module="DotNetExtras.Extended" kind="DynamicallyLinkedLibrary">
+          <assemblydata version="1.0.1" />
+        </library>
+        <namespace api="N:DotNetExtras.Extended" />
+      </containers>
+      <attributes>
+        <attribute>
+          <type api="T:System.Runtime.CompilerServices.ExtensionAttribute" ref="true" />
+        </attribute>
+      </attributes>
+      <file name="T_DotNetExtras_Extended_IListExtensions" />
+    </api>
+    <api id="Methods.T:DotNetExtras.Extended.IListExtensions">
+      <topicdata name="IListExtensions" group="list" subgroup="Methods" typeTopicId="T:DotNetExtras.Extended.IListExtensions" />
+      <apidata name="IListExtensions" group="type" subgroup="class" />
+      <typedata visibility="public" abstract="true" sealed="true" serializable="false" />
+      <elements>
+        <element api="M:DotNetExtras.Extended.IListExtensions.RemoveMatching(System.Collections.IList,System.Object,System.Boolean)" />
+      </elements>
+      <containers>
+        <library assembly="DotNetExtras.Extended" module="DotNetExtras.Extended" kind="DynamicallyLinkedLibrary">
+          <assemblydata version="1.0.1" />
+        </library>
+        <namespace api="N:DotNetExtras.Extended" />
+        <type api="T:DotNetExtras.Extended.IListExtensions" />
+      </containers>
+      <file name="Methods_T_DotNetExtras_Extended_IListExtensions" />
+    </api>
+    <api id="M:DotNetExtras.Extended.IListExtensions.RemoveMatching(System.Collections.IList,System.Object,System.Boolean)">
+      <topicdata group="api" />
+      <apidata name="RemoveMatching" group="member" subgroup="method" />
+      <memberdata visibility="public" static="true" />
+      <proceduredata virtual="false" />
+      <parameters>
+        <parameter name="elements">
+          <type api="T:System.Collections.IList" ref="true" />
+        </parameter>
+        <parameter name="elementToMatch">
+          <type api="T:System.Object" ref="true" />
+        </parameter>
+        <parameter name="includeNonPublic" optional="true">
+          <type api="T:System.Boolean" ref="false" />
+          <argument>
+            <type api="T:System.Boolean" ref="false" />
+            <value>False</value>
+          </argument>
+        </parameter>
+      </parameters>
+      <returns>
+        <type api="T:System.Int32" ref="false" />
+      </returns>
+      <containers>
+        <library assembly="DotNetExtras.Extended" module="DotNetExtras.Extended" kind="DynamicallyLinkedLibrary">
+          <assemblydata version="1.0.1" />
+          <noAptca />
+        </library>
+        <namespace api="N:DotNetExtras.Extended" />
+        <type api="T:DotNetExtras.Extended.IListExtensions" ref="true" />
+      </containers>
+      <attributes>
+        <attribute>
+          <type api="T:System.Runtime.CompilerServices.ExtensionAttribute" ref="true" />
+        </attribute>
+      </attributes>
+      <file name="M_DotNetExtras_Extended_IListExtensions_RemoveMatching" />
+    </api>
+    <api id="T:DotNetExtras.Extended.IntegerExtensions">
+      <topicdata group="api" />
+      <apidata name="IntegerExtensions" group="type" subgroup="class" />
+      <typedata visibility="public" abstract="true" sealed="true" serializable="false" />
+      <family>
+        <ancestors>
+          <type api="T:System.Object" ref="true" />
+        </ancestors>
+      </family>
+      <elements>
+        <element api="M:DotNetExtras.Extended.IntegerExtensions.ToHResult(System.Int32)" />
+      </elements>
+      <containers>
+        <library assembly="DotNetExtras.Extended" module="DotNetExtras.Extended" kind="DynamicallyLinkedLibrary">
+          <assemblydata version="1.0.1" />
+        </library>
+        <namespace api="N:DotNetExtras.Extended" />
+      </containers>
+      <attributes>
+        <attribute>
+          <type api="T:System.Runtime.CompilerServices.ExtensionAttribute" ref="true" />
+        </attribute>
+      </attributes>
+      <file name="T_DotNetExtras_Extended_IntegerExtensions" />
+    </api>
+    <api id="Methods.T:DotNetExtras.Extended.IntegerExtensions">
+      <topicdata name="IntegerExtensions" group="list" subgroup="Methods" typeTopicId="T:DotNetExtras.Extended.IntegerExtensions" />
+      <apidata name="IntegerExtensions" group="type" subgroup="class" />
+      <typedata visibility="public" abstract="true" sealed="true" serializable="false" />
+      <elements>
+        <element api="M:DotNetExtras.Extended.IntegerExtensions.ToHResult(System.Int32)" />
+      </elements>
+      <containers>
+        <library assembly="DotNetExtras.Extended" module="DotNetExtras.Extended" kind="DynamicallyLinkedLibrary">
+          <assemblydata version="1.0.1" />
+        </library>
+        <namespace api="N:DotNetExtras.Extended" />
+        <type api="T:DotNetExtras.Extended.IntegerExtensions" />
+      </containers>
+      <file name="Methods_T_DotNetExtras_Extended_IntegerExtensions" />
+    </api>
+    <api id="M:DotNetExtras.Extended.IntegerExtensions.ToHResult(System.Int32)">
+      <topicdata group="api" />
+      <apidata name="ToHResult" group="member" subgroup="method" />
+      <memberdata visibility="public" static="true" />
+      <proceduredata virtual="false" />
+      <parameters>
+        <parameter name="hresult">
+          <type api="T:System.Int32" ref="false" />
+        </parameter>
+      </parameters>
+      <returns>
+        <type api="T:System.String" ref="true" />
+      </returns>
+      <containers>
+        <library assembly="DotNetExtras.Extended" module="DotNetExtras.Extended" kind="DynamicallyLinkedLibrary">
+          <assemblydata version="1.0.1" />
+          <noAptca />
+        </library>
+        <namespace api="N:DotNetExtras.Extended" />
+        <type api="T:DotNetExtras.Extended.IntegerExtensions" ref="true" />
+      </containers>
+      <attributes>
+        <attribute>
+          <type api="T:System.Runtime.CompilerServices.ExtensionAttribute" ref="true" />
+        </attribute>
+      </attributes>
+      <file name="M_DotNetExtras_Extended_IntegerExtensions_ToHResult" />
+    </api>
+    <api id="T:DotNetExtras.Extended.ObjectExtensions">
+      <topicdata group="api" />
+      <apidata name="ObjectExtensions" group="type" subgroup="class" />
+      <typedata visibility="public" abstract="true" sealed="true" serializable="false" />
+      <family>
+        <ancestors>
+          <type api="T:System.Object" ref="true" />
+        </ancestors>
+      </family>
+      <elements>
+        <element api="Overload:DotNetExtras.Extended.ObjectExtensions.Clone">
+          <element api="M:DotNetExtras.Extended.ObjectExtensions.Clone``1(``0)" />
+          <element api="M:DotNetExtras.Extended.ObjectExtensions.Clone(System.Object)" />
+        </element>
+        <element api="M:DotNetExtras.Extended.ObjectExtensions.ToDynamic``1(``0,System.Collections.Generic.Dictionary{System.String,System.Object},System.Boolean)" />
+      </elements>
+      <containers>
+        <library assembly="DotNetExtras.Extended" module="DotNetExtras.Extended" kind="DynamicallyLinkedLibrary">
+          <assemblydata version="1.0.1" />
+        </library>
+        <namespace api="N:DotNetExtras.Extended" />
+      </containers>
+      <attributes>
+        <attribute>
+          <type api="T:System.Runtime.CompilerServices.ExtensionAttribute" ref="true" />
+        </attribute>
+      </attributes>
+      <file name="T_DotNetExtras_Extended_ObjectExtensions" />
+    </api>
+    <api id="Methods.T:DotNetExtras.Extended.ObjectExtensions">
+      <topicdata name="ObjectExtensions" group="list" subgroup="Methods" typeTopicId="T:DotNetExtras.Extended.ObjectExtensions" />
+      <apidata name="ObjectExtensions" group="type" subgroup="class" />
+      <typedata visibility="public" abstract="true" sealed="true" serializable="false" />
+      <elements>
+        <element api="Overload:DotNetExtras.Extended.ObjectExtensions.Clone">
+          <element api="M:DotNetExtras.Extended.ObjectExtensions.Clone``1(``0)" />
+          <element api="M:DotNetExtras.Extended.ObjectExtensions.Clone(System.Object)" />
+        </element>
+        <element api="M:DotNetExtras.Extended.ObjectExtensions.ToDynamic``1(``0,System.Collections.Generic.Dictionary{System.String,System.Object},System.Boolean)" />
+      </elements>
+      <containers>
+        <library assembly="DotNetExtras.Extended" module="DotNetExtras.Extended" kind="DynamicallyLinkedLibrary">
+          <assemblydata version="1.0.1" />
+        </library>
+        <namespace api="N:DotNetExtras.Extended" />
+        <type api="T:DotNetExtras.Extended.ObjectExtensions" />
+      </containers>
+      <file name="Methods_T_DotNetExtras_Extended_ObjectExtensions" />
+    </api>
+    <api id="Overload:DotNetExtras.Extended.ObjectExtensions.Clone">
+      <topicdata name="Clone" group="list" subgroup="overload" memberSubgroup="method" pseudo="true" />
+      <apidata name="Clone" group="member" subgroup="method" />
+      <elements>
+        <element api="M:DotNetExtras.Extended.ObjectExtensions.Clone``1(``0)" />
+        <element api="M:DotNetExtras.Extended.ObjectExtensions.Clone(System.Object)" />
+      </elements>
+      <containers>
+        <library assembly="DotNetExtras.Extended" module="DotNetExtras.Extended" kind="DynamicallyLinkedLibrary">
+          <assemblydata version="1.0.1" />
+        </library>
+        <namespace api="N:DotNetExtras.Extended" />
+        <type api="T:DotNetExtras.Extended.ObjectExtensions" ref="true" />
+      </containers>
+      <file name="Overload_DotNetExtras_Extended_ObjectExtensions_Clone" />
+    </api>
+    <api id="M:DotNetExtras.Extended.ObjectExtensions.Clone(System.Object)">
+      <topicdata group="api" />
+      <apidata name="Clone" group="member" subgroup="method" />
+      <memberdata visibility="public" static="true" overload="Overload:DotNetExtras.Extended.ObjectExtensions.Clone" />
+      <proceduredata virtual="false" />
+      <parameters>
+        <parameter name="original">
+          <type nullable="true" api="T:System.Object" ref="true" />
+        </parameter>
+      </parameters>
+      <returns>
+        <type nullable="true" api="T:System.Object" ref="true" />
+      </returns>
+      <containers>
+        <library assembly="DotNetExtras.Extended" module="DotNetExtras.Extended" kind="DynamicallyLinkedLibrary">
+          <assemblydata version="1.0.1" />
+          <noAptca />
+        </library>
+        <namespace api="N:DotNetExtras.Extended" />
+        <type api="T:DotNetExtras.Extended.ObjectExtensions" ref="true" />
+      </containers>
+      <attributes>
+        <attribute>
+          <type api="T:System.Runtime.CompilerServices.ExtensionAttribute" ref="true" />
+        </attribute>
+      </attributes>
+      <file name="M_DotNetExtras_Extended_ObjectExtensions_Clone" />
+    </api>
+    <api id="M:DotNetExtras.Extended.ObjectExtensions.Clone``1(``0)">
+      <topicdata group="api" />
+      <apidata name="Clone" group="member" subgroup="method" />
+      <memberdata visibility="public" static="true" overload="Overload:DotNetExtras.Extended.ObjectExtensions.Clone" />
+      <proceduredata virtual="false" />
+      <templates>
+        <template name="T" />
+      </templates>
+      <parameters>
+        <parameter name="original">
+          <template name="T" index="0" api="M:DotNetExtras.Extended.ObjectExtensions.Clone``1(``0)" />
+        </parameter>
+      </parameters>
+      <returns>
+        <template name="T" index="0" api="M:DotNetExtras.Extended.ObjectExtensions.Clone``1(``0)" />
+      </returns>
+      <containers>
+        <library assembly="DotNetExtras.Extended" module="DotNetExtras.Extended" kind="DynamicallyLinkedLibrary">
+          <assemblydata version="1.0.1" />
+          <noAptca />
+        </library>
+        <namespace api="N:DotNetExtras.Extended" />
+        <type api="T:DotNetExtras.Extended.ObjectExtensions" ref="true" />
+      </containers>
+      <attributes>
+        <attribute>
+          <type api="T:System.Runtime.CompilerServices.ExtensionAttribute" ref="true" />
+        </attribute>
+      </attributes>
+      <file name="M_DotNetExtras_Extended_ObjectExtensions_Clone__1" />
+    </api>
+    <api id="M:DotNetExtras.Extended.ObjectExtensions.ToDynamic``1(``0,System.Collections.Generic.Dictionary{System.String,System.Object},System.Boolean)">
+      <topicdata group="api" />
+      <apidata name="ToDynamic" group="member" subgroup="method" />
+      <memberdata visibility="public" static="true" />
+      <proceduredata virtual="false" />
+      <templates>
+        <template name="T" />
+      </templates>
+      <parameters>
+        <parameter name="source">
+          <template name="T" index="0" api="M:DotNetExtras.Extended.ObjectExtensions.ToDynamic``1(``0,System.Collections.Generic.Dictionary{System.String,System.Object},System.Boolean)" />
+        </parameter>
+        <parameter name="extras" optional="true">
+          <type nullable="true" api="T:System.Collections.Generic.Dictionary`2" ref="true">
+            <specialization>
+              <type api="T:System.String" ref="true" />
+              <type api="T:System.Object" ref="true" />
+            </specialization>
+          </type>
+          <argument>
+            <type api="T:System.Object" ref="true" />
+            <nullValue />
+          </argument>
+        </parameter>
+        <parameter name="publicOnly" optional="true">
+          <type api="T:System.Boolean" ref="false" />
+          <argument>
+            <type api="T:System.Boolean" ref="false" />
+            <value>False</value>
+          </argument>
+        </parameter>
+      </parameters>
+      <returns>
+        <type nullable="true" api="T:System.Object" ref="true" />
+      </returns>
+      <containers>
+        <library assembly="DotNetExtras.Extended" module="DotNetExtras.Extended" kind="DynamicallyLinkedLibrary">
+          <assemblydata version="1.0.1" />
+          <noAptca />
+        </library>
+        <namespace api="N:DotNetExtras.Extended" />
+        <type api="T:DotNetExtras.Extended.ObjectExtensions" ref="true" />
+      </containers>
+      <attributes>
+        <attribute>
+          <type api="T:System.Runtime.CompilerServices.ExtensionAttribute" ref="true" />
+        </attribute>
+      </attributes>
+      <file name="M_DotNetExtras_Extended_ObjectExtensions_ToDynamic__1" />
+    </api>
+    <api id="T:DotNetExtras.Extended.StringExtensions">
+      <topicdata group="api" />
+      <apidata name="StringExtensions" group="type" subgroup="class" />
+      <typedata visibility="public" abstract="true" sealed="true" serializable="false" />
+      <family>
+        <ancestors>
+          <type api="T:System.Object" ref="true" />
+        </ancestors>
+      </family>
+      <elements>
+        <element api="M:DotNetExtras.Extended.StringExtensions.EscapeLdapValue(System.String)" />
+        <element api="M:DotNetExtras.Extended.StringExtensions.IsHtml(System.String)" />
+        <element api="M:DotNetExtras.Extended.StringExtensions.IsJson(System.String)" />
+        <element api="M:DotNetExtras.Extended.StringExtensions.ToArray``1(System.String,System.String,System.StringSplitOptions)" />
+        <element api="M:DotNetExtras.Extended.StringExtensions.ToDate(System.String,System.String)" />
+        <element api="M:DotNetExtras.Extended.StringExtensions.ToDateTime(System.String,System.String)" />
+        <element api="M:DotNetExtras.Extended.StringExtensions.ToDateTimeOffset(System.String,System.String)" />
+        <element api="M:DotNetExtras.Extended.StringExtensions.ToDictionary``2(System.String,System.String,System.String,System.StringSplitOptions,System.StringSplitOptions)" />
+        <element api="M:DotNetExtras.Extended.StringExtensions.ToHashSet``1(System.String,System.String,System.StringSplitOptions)" />
+        <element api="M:DotNetExtras.Extended.StringExtensions.ToList``1(System.String,System.String)" />
+        <element api="M:DotNetExtras.Extended.StringExtensions.ToTime(System.String,System.String)" />
+        <element api="M:DotNetExtras.Extended.StringExtensions.ToType``1(System.String)" />
+      </elements>
+      <containers>
+        <library assembly="DotNetExtras.Extended" module="DotNetExtras.Extended" kind="DynamicallyLinkedLibrary">
+          <assemblydata version="1.0.1" />
+        </library>
+        <namespace api="N:DotNetExtras.Extended" />
+      </containers>
+      <attributes>
+        <attribute>
+          <type api="T:System.Runtime.CompilerServices.ExtensionAttribute" ref="true" />
+        </attribute>
+      </attributes>
+      <file name="T_DotNetExtras_Extended_StringExtensions" />
+    </api>
+    <api id="Methods.T:DotNetExtras.Extended.StringExtensions">
+      <topicdata name="StringExtensions" group="list" subgroup="Methods" typeTopicId="T:DotNetExtras.Extended.StringExtensions" />
+      <apidata name="StringExtensions" group="type" subgroup="class" />
+      <typedata visibility="public" abstract="true" sealed="true" serializable="false" />
+      <elements>
+        <element api="M:DotNetExtras.Extended.StringExtensions.EscapeLdapValue(System.String)" />
+        <element api="M:DotNetExtras.Extended.StringExtensions.IsHtml(System.String)" />
+        <element api="M:DotNetExtras.Extended.StringExtensions.IsJson(System.String)" />
+        <element api="M:DotNetExtras.Extended.StringExtensions.ToArray``1(System.String,System.String,System.StringSplitOptions)" />
+        <element api="M:DotNetExtras.Extended.StringExtensions.ToDate(System.String,System.String)" />
+        <element api="M:DotNetExtras.Extended.StringExtensions.ToDateTime(System.String,System.String)" />
+        <element api="M:DotNetExtras.Extended.StringExtensions.ToDateTimeOffset(System.String,System.String)" />
+        <element api="M:DotNetExtras.Extended.StringExtensions.ToDictionary``2(System.String,System.String,System.String,System.StringSplitOptions,System.StringSplitOptions)" />
+        <element api="M:DotNetExtras.Extended.StringExtensions.ToHashSet``1(System.String,System.String,System.StringSplitOptions)" />
+        <element api="M:DotNetExtras.Extended.StringExtensions.ToList``1(System.String,System.String)" />
+        <element api="M:DotNetExtras.Extended.StringExtensions.ToTime(System.String,System.String)" />
+        <element api="M:DotNetExtras.Extended.StringExtensions.ToType``1(System.String)" />
+      </elements>
+      <containers>
+        <library assembly="DotNetExtras.Extended" module="DotNetExtras.Extended" kind="DynamicallyLinkedLibrary">
+          <assemblydata version="1.0.1" />
+        </library>
+        <namespace api="N:DotNetExtras.Extended" />
+        <type api="T:DotNetExtras.Extended.StringExtensions" />
+      </containers>
+      <file name="Methods_T_DotNetExtras_Extended_StringExtensions" />
+    </api>
+    <api id="M:DotNetExtras.Extended.StringExtensions.EscapeLdapValue(System.String)">
+      <topicdata group="api" />
+      <apidata name="EscapeLdapValue" group="member" subgroup="method" />
+      <memberdata visibility="public" static="true" />
+      <proceduredata virtual="false" />
+      <parameters>
+        <parameter name="input">
+          <type api="T:System.String" ref="true" />
+        </parameter>
+      </parameters>
+      <returns>
+        <type nullable="true" api="T:System.String" ref="true" />
+      </returns>
+      <containers>
+        <library assembly="DotNetExtras.Extended" module="DotNetExtras.Extended" kind="DynamicallyLinkedLibrary">
+          <assemblydata version="1.0.1" />
+          <noAptca />
+        </library>
+        <namespace api="N:DotNetExtras.Extended" />
+        <type api="T:DotNetExtras.Extended.StringExtensions" ref="true" />
+      </containers>
+      <attributes>
+        <attribute>
+          <type api="T:System.Runtime.CompilerServices.ExtensionAttribute" ref="true" />
+        </attribute>
+      </attributes>
+      <file name="M_DotNetExtras_Extended_StringExtensions_EscapeLdapValue" />
+    </api>
+    <api id="M:DotNetExtras.Extended.StringExtensions.IsHtml(System.String)">
+      <topicdata group="api" />
+      <apidata name="IsHtml" group="member" subgroup="method" />
+      <memberdata visibility="public" static="true" />
+      <proceduredata virtual="false" />
+      <parameters>
+        <parameter name="source">
+          <type nullable="true" api="T:System.String" ref="true" />
+        </parameter>
+      </parameters>
+      <returns>
+        <type api="T:System.Boolean" ref="false" />
+      </returns>
+      <containers>
+        <library assembly="DotNetExtras.Extended" module="DotNetExtras.Extended" kind="DynamicallyLinkedLibrary">
+          <assemblydata version="1.0.1" />
+          <noAptca />
+        </library>
+        <namespace api="N:DotNetExtras.Extended" />
+        <type api="T:DotNetExtras.Extended.StringExtensions" ref="true" />
+      </containers>
+      <attributes>
+        <attribute>
+          <type api="T:System.Runtime.CompilerServices.ExtensionAttribute" ref="true" />
+        </attribute>
+      </attributes>
+      <file name="M_DotNetExtras_Extended_StringExtensions_IsHtml" />
+    </api>
+    <api id="M:DotNetExtras.Extended.StringExtensions.IsJson(System.String)">
+      <topicdata group="api" />
+      <apidata name="IsJson" group="member" subgroup="method" />
+      <memberdata visibility="public" static="true" />
+      <proceduredata virtual="false" />
+      <parameters>
+        <parameter name="source">
+          <type nullable="true" api="T:System.String" ref="true" />
+        </parameter>
+      </parameters>
+      <returns>
+        <type api="T:System.Boolean" ref="false" />
+      </returns>
+      <containers>
+        <library assembly="DotNetExtras.Extended" module="DotNetExtras.Extended" kind="DynamicallyLinkedLibrary">
+          <assemblydata version="1.0.1" />
+          <noAptca />
+        </library>
+        <namespace api="N:DotNetExtras.Extended" />
+        <type api="T:DotNetExtras.Extended.StringExtensions" ref="true" />
+      </containers>
+      <attributes>
+        <attribute>
+          <type api="T:System.Runtime.CompilerServices.ExtensionAttribute" ref="true" />
+        </attribute>
+      </attributes>
+      <file name="M_DotNetExtras_Extended_StringExtensions_IsJson" />
+    </api>
+    <api id="M:DotNetExtras.Extended.StringExtensions.ToArray``1(System.String,System.String,System.StringSplitOptions)">
+      <topicdata group="api" />
+      <apidata name="ToArray" group="member" subgroup="method" />
+      <memberdata visibility="public" static="true" />
+      <proceduredata virtual="false" />
+      <templates>
+        <template name="T" />
+      </templates>
+      <parameters>
+        <parameter name="source">
+          <type nullable="true" api="T:System.String" ref="true" />
+        </parameter>
+        <parameter name="delimiter" optional="true">
+          <type api="T:System.String" ref="true" />
+          <argument>
+            <type api="T:System.String" ref="true" />
+            <value>|</value>
+          </argument>
+        </parameter>
+        <parameter name="options" optional="true">
+          <type api="T:System.StringSplitOptions" ref="false" />
+          <argument>
+            <type api="T:System.StringSplitOptions" ref="false" />
+            <enumValue>
+              <field name="RemoveEmptyEntries" />
+              <field name="TrimEntries" />
+            </enumValue>
+          </argument>
+        </parameter>
+      </parameters>
+      <returns>
+        <arrayOf nullable="true" rank="1">
+          <template name="T" index="0" api="M:DotNetExtras.Extended.StringExtensions.ToArray``1(System.String,System.String,System.StringSplitOptions)" />
+        </arrayOf>
+      </returns>
+      <containers>
+        <library assembly="DotNetExtras.Extended" module="DotNetExtras.Extended" kind="DynamicallyLinkedLibrary">
+          <assemblydata version="1.0.1" />
+          <noAptca />
+        </library>
+        <namespace api="N:DotNetExtras.Extended" />
+        <type api="T:DotNetExtras.Extended.StringExtensions" ref="true" />
+      </containers>
+      <attributes>
+        <attribute>
+          <type api="T:System.Runtime.CompilerServices.ExtensionAttribute" ref="true" />
+        </attribute>
+      </attributes>
+      <file name="M_DotNetExtras_Extended_StringExtensions_ToArray__1" />
+    </api>
+    <api id="M:DotNetExtras.Extended.StringExtensions.ToDate(System.String,System.String)">
+      <topicdata group="api" />
+      <apidata name="ToDate" group="member" subgroup="method" />
+      <memberdata visibility="public" static="true" />
+      <proceduredata virtual="false" />
+      <parameters>
+        <parameter name="source">
+          <type api="T:System.String" ref="true" />
+        </parameter>
+        <parameter name="format" optional="true">
+          <type nullable="true" api="T:System.String" ref="true" />
+          <argument>
+            <type api="T:System.Object" ref="true" />
+            <nullValue />
+          </argument>
+        </parameter>
+      </parameters>
+      <returns>
+        <type api="T:System.Nullable`1" ref="false">
+          <specialization>
+            <type api="T:System.DateOnly" ref="false" />
+          </specialization>
+        </type>
+      </returns>
+      <containers>
+        <library assembly="DotNetExtras.Extended" module="DotNetExtras.Extended" kind="DynamicallyLinkedLibrary">
+          <assemblydata version="1.0.1" />
+          <noAptca />
+        </library>
+        <namespace api="N:DotNetExtras.Extended" />
+        <type api="T:DotNetExtras.Extended.StringExtensions" ref="true" />
+      </containers>
+      <attributes>
+        <attribute>
+          <type api="T:System.Runtime.CompilerServices.ExtensionAttribute" ref="true" />
+        </attribute>
+      </attributes>
+      <file name="M_DotNetExtras_Extended_StringExtensions_ToDate" />
+    </api>
+    <api id="M:DotNetExtras.Extended.StringExtensions.ToDateTime(System.String,System.String)">
+      <topicdata group="api" />
+      <apidata name="ToDateTime" group="member" subgroup="method" />
+      <memberdata visibility="public" static="true" />
+      <proceduredata virtual="false" />
+      <parameters>
+        <parameter name="source">
+          <type api="T:System.String" ref="true" />
+        </parameter>
+        <parameter name="format" optional="true">
+          <type nullable="true" api="T:System.String" ref="true" />
+          <argument>
+            <type api="T:System.Object" ref="true" />
+            <nullValue />
+          </argument>
+        </parameter>
+      </parameters>
+      <returns>
+        <type api="T:System.Nullable`1" ref="false">
+          <specialization>
+            <type api="T:System.DateTime" ref="false" />
+          </specialization>
+        </type>
+      </returns>
+      <containers>
+        <library assembly="DotNetExtras.Extended" module="DotNetExtras.Extended" kind="DynamicallyLinkedLibrary">
+          <assemblydata version="1.0.1" />
+          <noAptca />
+        </library>
+        <namespace api="N:DotNetExtras.Extended" />
+        <type api="T:DotNetExtras.Extended.StringExtensions" ref="true" />
+      </containers>
+      <attributes>
+        <attribute>
+          <type api="T:System.Runtime.CompilerServices.ExtensionAttribute" ref="true" />
+        </attribute>
+      </attributes>
+      <file name="M_DotNetExtras_Extended_StringExtensions_ToDateTime" />
+    </api>
+    <api id="M:DotNetExtras.Extended.StringExtensions.ToDateTimeOffset(System.String,System.String)">
+      <topicdata group="api" />
+      <apidata name="ToDateTimeOffset" group="member" subgroup="method" />
+      <memberdata visibility="public" static="true" />
+      <proceduredata virtual="false" />
+      <parameters>
+        <parameter name="source">
+          <type api="T:System.String" ref="true" />
+        </parameter>
+        <parameter name="format" optional="true">
+          <type nullable="true" api="T:System.String" ref="true" />
+          <argument>
+            <type api="T:System.Object" ref="true" />
+            <nullValue />
+          </argument>
+        </parameter>
+      </parameters>
+      <returns>
+        <type api="T:System.Nullable`1" ref="false">
+          <specialization>
+            <type api="T:System.DateTimeOffset" ref="false" />
+          </specialization>
+        </type>
+      </returns>
+      <containers>
+        <library assembly="DotNetExtras.Extended" module="DotNetExtras.Extended" kind="DynamicallyLinkedLibrary">
+          <assemblydata version="1.0.1" />
+          <noAptca />
+        </library>
+        <namespace api="N:DotNetExtras.Extended" />
+        <type api="T:DotNetExtras.Extended.StringExtensions" ref="true" />
+      </containers>
+      <attributes>
+        <attribute>
+          <type api="T:System.Runtime.CompilerServices.ExtensionAttribute" ref="true" />
+        </attribute>
+      </attributes>
+      <file name="M_DotNetExtras_Extended_StringExtensions_ToDateTimeOffset" />
+    </api>
+    <api id="M:DotNetExtras.Extended.StringExtensions.ToDictionary``2(System.String,System.String,System.String,System.StringSplitOptions,System.StringSplitOptions)">
+      <topicdata group="api" />
+      <apidata name="ToDictionary" group="member" subgroup="method" />
+      <memberdata visibility="public" static="true" />
+      <proceduredata virtual="false" />
+      <templates>
+        <template name="TKey" />
+        <template name="TValue" />
+      </templates>
+      <parameters>
+        <parameter name="source">
+          <type nullable="true" api="T:System.String" ref="true" />
+        </parameter>
+        <parameter name="delimiter" optional="true">
+          <type api="T:System.String" ref="true" />
+          <argument>
+            <type api="T:System.String" ref="true" />
+            <value>|</value>
+          </argument>
+        </parameter>
+        <parameter name="keyValueSeparator" optional="true">
+          <type api="T:System.String" ref="true" />
+          <argument>
+            <type api="T:System.String" ref="true" />
+            <value>=</value>
+          </argument>
+        </parameter>
+        <parameter name="optionsPairs" optional="true">
+          <type api="T:System.StringSplitOptions" ref="false" />
+          <argument>
+            <type api="T:System.StringSplitOptions" ref="false" />
+            <enumValue>
+              <field name="RemoveEmptyEntries" />
+              <field name="TrimEntries" />
+            </enumValue>
+          </argument>
+        </parameter>
+        <parameter name="optionsKeyValue" optional="true">
+          <type api="T:System.StringSplitOptions" ref="false" />
+          <argument>
+            <type api="T:System.StringSplitOptions" ref="false" />
+            <enumValue>
+              <field name="RemoveEmptyEntries" />
+              <field name="TrimEntries" />
+            </enumValue>
+          </argument>
+        </parameter>
+      </parameters>
+      <returns>
+        <type nullable="true" api="T:System.Collections.Generic.Dictionary`2" ref="true">
+          <specialization>
+            <template name="TKey" index="0" api="M:DotNetExtras.Extended.StringExtensions.ToDictionary``2(System.String,System.String,System.String,System.StringSplitOptions,System.StringSplitOptions)" />
+            <template name="TValue" index="1" api="M:DotNetExtras.Extended.StringExtensions.ToDictionary``2(System.String,System.String,System.String,System.StringSplitOptions,System.StringSplitOptions)" />
+          </specialization>
+        </type>
+      </returns>
+      <containers>
+        <library assembly="DotNetExtras.Extended" module="DotNetExtras.Extended" kind="DynamicallyLinkedLibrary">
+          <assemblydata version="1.0.1" />
+          <noAptca />
+        </library>
+        <namespace api="N:DotNetExtras.Extended" />
+        <type api="T:DotNetExtras.Extended.StringExtensions" ref="true" />
+      </containers>
+      <attributes>
+        <attribute>
+          <type api="T:System.Runtime.CompilerServices.ExtensionAttribute" ref="true" />
+        </attribute>
+      </attributes>
+      <file name="M_DotNetExtras_Extended_StringExtensions_ToDictionary__2" />
+    </api>
+    <api id="M:DotNetExtras.Extended.StringExtensions.ToHashSet``1(System.String,System.String,System.StringSplitOptions)">
+      <topicdata group="api" />
+      <apidata name="ToHashSet" group="member" subgroup="method" />
+      <memberdata visibility="public" static="true" />
+      <proceduredata virtual="false" />
+      <templates>
+        <template name="T" />
+      </templates>
+      <parameters>
+        <parameter name="source">
+          <type nullable="true" api="T:System.String" ref="true" />
+        </parameter>
+        <parameter name="delimiter" optional="true">
+          <type api="T:System.String" ref="true" />
+          <argument>
+            <type api="T:System.String" ref="true" />
+            <value>|</value>
+          </argument>
+        </parameter>
+        <parameter name="options" optional="true">
+          <type api="T:System.StringSplitOptions" ref="false" />
+          <argument>
+            <type api="T:System.StringSplitOptions" ref="false" />
+            <enumValue>
+              <field name="RemoveEmptyEntries" />
+              <field name="TrimEntries" />
+            </enumValue>
+          </argument>
+        </parameter>
+      </parameters>
+      <returns>
+        <type nullable="true" api="T:System.Collections.Generic.HashSet`1" ref="true">
+          <specialization>
+            <template name="T" index="0" api="M:DotNetExtras.Extended.StringExtensions.ToHashSet``1(System.String,System.String,System.StringSplitOptions)" />
+          </specialization>
+        </type>
+      </returns>
+      <containers>
+        <library assembly="DotNetExtras.Extended" module="DotNetExtras.Extended" kind="DynamicallyLinkedLibrary">
+          <assemblydata version="1.0.1" />
+          <noAptca />
+        </library>
+        <namespace api="N:DotNetExtras.Extended" />
+        <type api="T:DotNetExtras.Extended.StringExtensions" ref="true" />
+      </containers>
+      <attributes>
+        <attribute>
+          <type api="T:System.Runtime.CompilerServices.ExtensionAttribute" ref="true" />
+        </attribute>
+      </attributes>
+      <file name="M_DotNetExtras_Extended_StringExtensions_ToHashSet__1" />
+    </api>
+    <api id="M:DotNetExtras.Extended.StringExtensions.ToList``1(System.String,System.String)">
+      <topicdata group="api" />
+      <apidata name="ToList" group="member" subgroup="method" />
+      <memberdata visibility="public" static="true" />
+      <proceduredata virtual="false" />
+      <templates>
+        <template name="T" />
+      </templates>
+      <parameters>
+        <parameter name="source">
+          <type nullable="true" api="T:System.String" ref="true" />
+        </parameter>
+        <parameter name="delimiter" optional="true">
+          <type api="T:System.String" ref="true" />
+          <argument>
+            <type api="T:System.String" ref="true" />
+            <value>|</value>
+          </argument>
+        </parameter>
+      </parameters>
+      <returns>
+        <type nullable="true" api="T:System.Collections.Generic.List`1" ref="true">
+          <specialization>
+            <template name="T" index="0" api="M:DotNetExtras.Extended.StringExtensions.ToList``1(System.String,System.String)" />
+          </specialization>
+        </type>
+      </returns>
+      <containers>
+        <library assembly="DotNetExtras.Extended" module="DotNetExtras.Extended" kind="DynamicallyLinkedLibrary">
+          <assemblydata version="1.0.1" />
+          <noAptca />
+        </library>
+        <namespace api="N:DotNetExtras.Extended" />
+        <type api="T:DotNetExtras.Extended.StringExtensions" ref="true" />
+      </containers>
+      <attributes>
+        <attribute>
+          <type api="T:System.Runtime.CompilerServices.ExtensionAttribute" ref="true" />
+        </attribute>
+      </attributes>
+      <file name="M_DotNetExtras_Extended_StringExtensions_ToList__1" />
+    </api>
+    <api id="M:DotNetExtras.Extended.StringExtensions.ToTime(System.String,System.String)">
+      <topicdata group="api" />
+      <apidata name="ToTime" group="member" subgroup="method" />
+      <memberdata visibility="public" static="true" />
+      <proceduredata virtual="false" />
+      <parameters>
+        <parameter name="source">
+          <type api="T:System.String" ref="true" />
+        </parameter>
+        <parameter name="format" optional="true">
+          <type nullable="true" api="T:System.String" ref="true" />
+          <argument>
+            <type api="T:System.Object" ref="true" />
+            <nullValue />
+          </argument>
+        </parameter>
+      </parameters>
+      <returns>
+        <type api="T:System.Nullable`1" ref="false">
+          <specialization>
+            <type api="T:System.TimeOnly" ref="false" />
+          </specialization>
+        </type>
+      </returns>
+      <containers>
+        <library assembly="DotNetExtras.Extended" module="DotNetExtras.Extended" kind="DynamicallyLinkedLibrary">
+          <assemblydata version="1.0.1" />
+          <noAptca />
+        </library>
+        <namespace api="N:DotNetExtras.Extended" />
+        <type api="T:DotNetExtras.Extended.StringExtensions" ref="true" />
+      </containers>
+      <attributes>
+        <attribute>
+          <type api="T:System.Runtime.CompilerServices.ExtensionAttribute" ref="true" />
+        </attribute>
+      </attributes>
+      <file name="M_DotNetExtras_Extended_StringExtensions_ToTime" />
+    </api>
+    <api id="M:DotNetExtras.Extended.StringExtensions.ToType``1(System.String)">
+      <topicdata group="api" />
+      <apidata name="ToType" group="member" subgroup="method" />
+      <memberdata visibility="public" static="true" />
+      <proceduredata virtual="false" />
+      <templates>
+        <template name="T" />
+      </templates>
+      <parameters>
+        <parameter name="source">
+          <type api="T:System.String" ref="true" />
+        </parameter>
+      </parameters>
+      <returns>
+        <template name="T" index="0" api="M:DotNetExtras.Extended.StringExtensions.ToType``1(System.String)" />
+      </returns>
+      <containers>
+        <library assembly="DotNetExtras.Extended" module="DotNetExtras.Extended" kind="DynamicallyLinkedLibrary">
+          <assemblydata version="1.0.1" />
+          <noAptca />
+        </library>
+        <namespace api="N:DotNetExtras.Extended" />
+        <type api="T:DotNetExtras.Extended.StringExtensions" ref="true" />
+      </containers>
+      <attributes>
+        <attribute>
+          <type api="T:System.Runtime.CompilerServices.ExtensionAttribute" ref="true" />
+        </attribute>
+      </attributes>
+      <file name="M_DotNetExtras_Extended_StringExtensions_ToType__1" />
+    </api>
+    <api id="R:Project_DotNetExtras.Extended.Help">
+      <topicdata group="root" />
+      <elements>
+        <element api="N:DotNetExtras.Extended" />
+      </elements>
+      <file name="R_Project_DotNetExtras_Extended_Help" />
+    </api>
+  </apis>
+</reflection>

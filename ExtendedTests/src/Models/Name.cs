@@ -1,6 +1,6 @@
 ﻿using System.Text.Json.Serialization;
 
-namespace CommonLibTests.Models;
+namespace ExtendedLibTests.Models;
 internal class Name
 {
     [JsonInclude]

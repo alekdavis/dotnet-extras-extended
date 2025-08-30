@@ -22,6 +22,8 @@ Project("{7CF6DF6D-3B04-46F8-A40B-537D21BCA0B4}") = "ExtendedHelp", "ExtendedHel
 		{7E2D7F22-B874-6F34-EEF5-D5B911B5FDF5} = {7E2D7F22-B874-6F34-EEF5-D5B911B5FDF5}
 	EndProjectSection
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DeepCopyTests", "DeepCopyTests\DeepCopyTests.csproj", "{D2673F57-F6EB-6C28-DDB4-09B37BBCAD44}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -38,6 +40,10 @@ Global
 		{77F74FEA-BCA0-217C-764A-05E401CA92EA}.Release|Any CPU.Build.0 = Release|Any CPU
 		{141EE98F-6CFE-4026-B814-EAC4B53DE301}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{141EE98F-6CFE-4026-B814-EAC4B53DE301}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D2673F57-F6EB-6C28-DDB4-09B37BBCAD44}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D2673F57-F6EB-6C28-DDB4-09B37BBCAD44}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D2673F57-F6EB-6C28-DDB4-09B37BBCAD44}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D2673F57-F6EB-6C28-DDB4-09B37BBCAD44}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

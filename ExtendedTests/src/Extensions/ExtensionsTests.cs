@@ -1,4 +1,4 @@
-﻿namespace CommonLibTests;
+﻿namespace ExtendedLibTests;
 public partial class ExtensionsTests
 {
 }

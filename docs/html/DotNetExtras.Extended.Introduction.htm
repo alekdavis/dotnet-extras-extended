@@ -2,14 +2,60 @@
         The <em>DotNetExtras.Extended</em> library implements useful but not frequently used extension methods for common data types. For the detailed description of the library API, code samples, and usage scenarios, see the <em>API documentation</em> section.
       </p></div><h2 id="Overview" class="quickLinkHeader"><span class="icon toggleSection" tabindex="0"><i class="fa fa-angle-down"></i></span>Overview</h2><div id="IDCABSection"><p>
           Use the <em>DotNetExtras.Extended</em> library to perform such tasks as:
-        </p><ol><li><p>Deep cloning objects (this method uses an external library).</p></li><li><p>Checking if objects or variables are equivalent (not the same as equal, since different data types, such as <span class="code">int</span> and <span class="code">long</span> will never be considered equal even if they hold the same value).</p></li><li><p>Checking if a string contains valid JSON or HTML.</p></li><li><p>Performing various data conversions between data types.</p></li></ol><h4 id="Implementation" class="quickLinkHeader">Implementation</h4><p>
-                This library has some external dependencies for specific tasks. For example the deep cloning method uses the <a href="https://www.nuget.org/packages/DeepCloner" target="_blank" rel="noopener noreferrer">DeepCloner</a>
+        </p><ol><li><p>Deep cloning objects (relies on an external library).</p></li><li><p>Checking if objects or variables are equivalent (not the same as equal, since different data types, such as <span class="code">int</span> and <span class="code">long</span> will never be considered equal even if they hold the same value).</p></li><li><p>Checking if a string contains valid JSON or HTML.</p></li><li><p>Performing various data conversions between data types.</p></li></ol><h4 id="Implementation" class="quickLinkHeader">Implementation</h4><p>
+                This library has some external dependencies for certain tasks. For example, the deep cloning method uses the <a href="https://www.nuget.org/packages/DeepCloner" target="_blank" rel="noopener noreferrer">DeepCloner</a>
                 package because it provides the most robust implementation of the deep copying objects among available libraries (and we tested a few). If we find a better library in the future, we may switch to it.
               </p><h4 id="Example" class="quickLinkHeader">Example</h4><p>
                The following examples illustrates how to use various extension methods implemented by the <em>DotNetExtras.Extended</em> library.
-              </p><div class="codeSnippet"><div class="codeHeader"><span class="codeHeaderTitle">Deep clone an object</span><button class="button is-small is-light copyCode" title="Copy"><span class="icon is-small"><i class="fa fa-copy"></i></span><span>Copy</span></button></div><div class="codePanel hljs"><pre xml:space="preserve"><code class="language-cs">using DotNetExtras.Extended;
+              </p><div class="codeSnippet"><div class="codeHeader"><span class="codeHeaderTitle">Convert string values to simple data types</span><button class="button is-small is-light copyCode" title="Copy"><span class="icon is-small"><i class="fa fa-copy"></i></span><span>Copy</span></button></div><div class="codePanel hljs"><pre xml:space="preserve"><code class="language-cs">using DotNetExtras.Extended;
 ...
-User clone = original.Clone();</code></pre></div></div><div class="codeSnippet"><div class="codeHeader"><span class="codeHeaderTitle">Check if two variables are equivalent</span><button class="button is-small is-light copyCode" title="Copy"><span class="icon is-small"><i class="fa fa-copy"></i></span><span>Copy</span></button></div><div class="codePanel hljs"><pre xml:space="preserve"><code class="language-cs" /></pre></div></div><p>             
+bool b = "true".ToType&lt;bool&gt;();
+int n = "123".ToType&lt;int&gt;();
+DateTime dt = "2021-10-11T17:54:38".ToType&lt;DateTime&gt;();
+DateTimeOffset dto = "2021-10-11T17:54:38-03:30".ToType&lt;DateTimeOffset&gt;();</code></pre></div></div><div class="codeSnippet"><div class="codeHeader"><span class="codeHeaderTitle">Convert string values to arrays, lists, dictionaries, has sets</span><button class="button is-small is-light copyCode" title="Copy"><span class="icon is-small"><i class="fa fa-copy"></i></span><span>Copy</span></button></div><div class="codePanel hljs"><pre xml:space="preserve"><code class="language-cs">using DotNetExtras.Extended;
+...
+// Will hold: value1, value2, value3
+string[] result = "value1|value2|value3".ToArray&lt;string&gt;(); 
+
+// Will hold: value1, value2, value3
+List&lt;string&gt; list = "value1|value2|value3".ToList&lt;string&gt;();
+
+// Will hold: key1=value1, key2=value2
+Dictionary&lt;string,string&gt; result = "key1=value1|key2=value2".ToDictionary&lt;string, string&gt;();
+
+// Will hold: [1, 2, 3]
+HashSet&lt;int&gt;? hashSet = "1|2|3".ToHashSet();
+
+// Will hold: ["one", "two", "three"]
+HashSet&lt;string&gt;? hashSet = "one,two,three".ToHashSet(",");</code></pre></div></div><div class="codeSnippet"><div class="codeHeader"><span class="codeHeaderTitle">Check if string contains a valid JSON or HTML document</span><button class="button is-small is-light copyCode" title="Copy"><span class="icon is-small"><i class="fa fa-copy"></i></span><span>Copy</span></button></div><div class="codePanel hljs"><pre xml:space="preserve"><code class="language-cs">using DotNetExtras.Extended;
+...
+bool isJson;
+
+// This test can handle both a single element and an array.
+isJson = "{\"key1\": \"value1\", \"key2\": \"value2\"}".IsJson(); // true
+isJson = "[{\"key1\": \"value1\"}, {\"key2\": \"value2\", \"key3\": 123}]".IsJson(); // true
+
+bool isHtml;
+
+// This test only checks if the string starts with the html tag.
+isHtml = "&lt;!DOCTYPE html&gt;hello&lt;/html&gt;".IsHtml(); // true
+isHtml = "&lt;html&gt;hello&lt;/html&gt;".IsHtml(); // true</code></pre></div></div><div class="codeSnippet"><div class="codeHeader"><span class="codeHeaderTitle">Escape special LDAP characters in a string</span><button class="button is-small is-light copyCode" title="Copy"><span class="icon is-small"><i class="fa fa-copy"></i></span><span>Copy</span></button></div><div class="codePanel hljs"><pre xml:space="preserve"><code class="language-cs">using DotNetExtras.Extended;
+...
+// Will hold:
+string escaped = "Hello, world!".EscapeLdapValue();</code></pre></div></div><div class="codeSnippet"><div class="codeHeader"><span class="codeHeaderTitle">Deep clone an object</span><button class="button is-small is-light copyCode" title="Copy"><span class="icon is-small"><i class="fa fa-copy"></i></span><span>Copy</span></button></div><div class="codePanel hljs"><pre xml:space="preserve"><code class="language-cs">using DotNetExtras.Extended;
+...
+User clone = original.Clone();</code></pre></div></div><div class="codeSnippet"><div class="codeHeader"><span class="codeHeaderTitle">Remove elements from the list</span><button class="button is-small is-light copyCode" title="Copy"><span class="icon is-small"><i class="fa fa-copy"></i></span><span>Copy</span></button></div><div class="codePanel hljs"><pre xml:space="preserve"><code class="language-c#">List&lt;Sample&gt; elements = new()
+{
+    new(){ Id = 100, ParentId = 1, Name = "Item1" },
+    new(){ Id = 200, ParentId = 2, Name = "Item2" },
+    new(){ Id = 300, ParentId = 2, Name = "Item3" },
+    new(){ Id = 400, ParentId = 3, Name = "Item4" }
+};
+
+Sample match = new() { ParentId = 2 };
+
+// Removes two items with ParentId = 2.
+int removedCount = elements.RemoveMatching(match);</code></pre></div></div><p>             
                 For the complete example and other samples covering additional scenarios, see the source code (and read the comments) of the 
                 <a href="https://github.com/alekdavis/dotnet-extras-extended/tree/main/ExtendedTests" target="_blank" rel="noopener noreferrer">demo project</a>.
               </p></div><h2 class="quickLinkHeader"><span class="icon toggleSection" tabindex="0"><i class="fa fa-angle-down"></i></span>See Also</h2><div id="seeAlsoSection"><h4>Other Resources</h4><div><a href="https://www.nuget.org/packages/DotNetExtras.Extended" target="_blank" rel="noopener noreferrer">DotNetExtras.Extended NuGet package</a></div><div><a href="https://github.com/alekdavis/dotnet-extras-extended" target="_blank" rel="noopener noreferrer">DotNetExtras.Extended project repository</a></div></div></div><div id="InThisArticleColumn" class="column is-hidden-mobile"><nav class="menu sticky is-hidden"><p class="menu-label"><strong>In This Article</strong></p><ul id="InThisArticleMenu" class="menu-list"><li><a class="quickLink">Overview</a><ul class="menu"><li><a class="quickLink">Implementation</a></li><li><a class="quickLink">Example</a></li></ul></li><li><a class="quickLink">See Also</a></li></ul></nav></div></div></div><footer id="PageFooter" class="footer border-top py-3 fixedFooter"><div class="columns"><div id="FooterContent" class="column"><p>Copyright © 2025 Alek Davis</p><div class="feedbackLink">Send comments on this topic to

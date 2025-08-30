@@ -1,7 +1,7 @@
-﻿using CommonLibTests.Models;
+﻿using ExtendedLibTests.Models;
 using DotNetExtras.Extended;
 
-namespace CommonLibTests;
+namespace ExtendedLibTests;
 public partial class ExtensionsTests
 {
     [Fact]
@@ -22,14 +22,14 @@ public partial class ExtensionsTests
 
         originalCount = users.Count;
 
-        count = users.RemoveMatching(new User() { Name = new() { GivenName = "Alice" }});
+        count = users.RemoveMatching(new User() { Name = new() { GivenName = "Alice" }}, true);
         total += count;
 
         Assert.Equal(1, count);
         Assert.Equal(originalCount -  total, users.Count);
         Assert.DoesNotContain(users, u => u.Name?.GivenName == "Alice");
 
-        count = users.RemoveMatching(new User() { Age = 25, Sponsor = new() { Id = "98765" } });
+        count = users.RemoveMatching(new User() { Age = 25, Sponsor = new() { Id = "98765" } }, true);
         total += count;
 
         Assert.Equal(2, count);

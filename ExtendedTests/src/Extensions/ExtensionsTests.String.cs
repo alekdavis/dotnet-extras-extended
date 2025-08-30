@@ -1,7 +1,7 @@
 ﻿// Ignore Spelling: Json
 using DotNetExtras.Extended;
 
-namespace CommonLibTests;
+namespace ExtendedLibTests;
 public partial class ExtensionsTests
 {
     [Fact]
@@ -204,5 +204,19 @@ public partial class ExtensionsTests
     )
     {
         Assert.Equal(isHtml, source.IsHtml());
+    }
+
+    [Theory]
+    [InlineData(null, null)]
+    [InlineData("", "")]
+    [InlineData("hello", "hello")]
+    [InlineData("hello,#+<>;\\=world", "hello\\,\\#\\+\\<\\>\\;\\\\\\=world")]
+    public void String_EscapeLdapValue
+    (
+        string? source,
+        string? result
+    )
+    {
+        Assert.Equal(result, source?.EscapeLdapValue());
     }
 }
