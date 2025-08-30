@@ -67,11 +67,7 @@ using DotNetExtras.Extended;
 User clone = original.Clone();
 ]]>
               </code>
-              <code language="cs" title="Check if two variables are equivalent">
-<![CDATA[
 
-]]>
-              </code>
               <para>             
                 For the complete example and other samples covering additional scenarios, see the source code (and read the comments) of the 
                 <externalLink>

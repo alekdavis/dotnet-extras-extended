@@ -5,11 +5,9 @@
 Use the `DotNetExtras.Extended` library to:
 
 - Deep clone objects.
-- Check objects and variables for equivalence.
 - Remove list elements that match the specified criteria.
 - Check if a string value contains JSON.
 - Check if a string value contains HTML.
-- Check if a data type is simple or primitive.
 - Convert a string to a different data type, such as <c>DateTime</c>.
 - Convert a tokenized string to an array, dictionary, list, or hash set.
 
