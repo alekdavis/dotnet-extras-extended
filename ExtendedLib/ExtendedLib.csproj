@@ -6,7 +6,7 @@
     <Nullable>enable</Nullable>
     <AssemblyName>DotNetExtras.Extended</AssemblyName>
     <RootNamespace>DotNetExtras.Extended</RootNamespace>
-    <Version>1.0.1</Version>
+    <Version>1.0.2</Version>
     <Title>$(AssemblyName)</Title>
     <Authors>Alek Davis</Authors>
     <Description>A .NET Core library implementing less frequently used general-purpose operations.</Description>
@@ -21,7 +21,7 @@
     <IncludeSourceRevisionInInformationalVersion>False</IncludeSourceRevisionInInformationalVersion>
     <IncludeSymbols>True</IncludeSymbols>
     <SymbolPackageFormat>snupkg</SymbolPackageFormat>
-    <PackageReleaseNotes>Allow the RemoveMatching method to remove elements with matching non-public properties.</PackageReleaseNotes>
+    <PackageReleaseNotes>Updated dependencies.</PackageReleaseNotes>
   </PropertyGroup>
 
   <ItemGroup>
@@ -33,7 +33,9 @@
 
   <ItemGroup>
     <PackageReference Include="DeepCloner" Version="0.10.4" />
-    <PackageReference Include="DotNetExtras.Common" Version="1.0.5" />
+    <PackageReference Include="DotNetExtras.Common" Version="1.0.9" />
+    <PackageReference Include="System.Net.Http" Version="4.3.4" />
+    <PackageReference Include="System.Text.RegularExpressions" Version="4.3.1" />
   </ItemGroup>
 
 </Project>
