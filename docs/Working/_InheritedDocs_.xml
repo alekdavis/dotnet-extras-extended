@@ -1,0 +1,26 @@
+<doc>
+  <assembly>
+    <name>_InheritedDocs_</name>
+  </assembly>
+  <members>
+  <member name="M:DotNetExtras.Extended.ObjectExtensions.Clone(System.Object)">
+  
+  <summary>
+            Returns a deep copy of an object (requires type casting).
+            </summary>
+  <example>
+    <code>
+            MyObject? cloneObject = (MyObject?)originalObject.Clone();
+            </code>
+  </example>
+<param name="original">
+            Original object.
+            </param><returns>
+            Cloned object.
+            </returns><remarks>
+            Uses 
+            <see href="https://github.com/force-net/DeepCloner" />
+            (the only library that can handle copying all properties of the <c>Microsoft.Graph.Models.User</c>
+            objects).
+            </remarks></member></members>
+</doc>
