@@ -6,7 +6,7 @@
     <Nullable>enable</Nullable>
     <AssemblyName>DotNetExtras.Extended</AssemblyName>
     <RootNamespace>DotNetExtras.Extended</RootNamespace>
-    <Version>1.0.3</Version>
+    <Version>1.0.4</Version>
     <Title>$(AssemblyName)</Title>
     <Authors>Alek Davis</Authors>
     <Description>A .NET Core library implementing less frequently used general-purpose operations.</Description>
@@ -33,9 +33,7 @@
 
   <ItemGroup>
     <PackageReference Include="DeepCloner" Version="0.10.4" />
-    <PackageReference Include="DotNetExtras.Common" Version="1.0.19" />
-    <PackageReference Include="System.Net.Http" Version="4.3.4" />
-    <PackageReference Include="System.Text.RegularExpressions" Version="4.3.1" />
+    <PackageReference Include="DotNetExtras.Common" Version="1.0.21" />
   </ItemGroup>
 
 </Project>
