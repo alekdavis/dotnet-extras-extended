@@ -4,20 +4,8 @@
     <TargetFramework>net8.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
-
     <IsPackable>false</IsPackable>
     <IsTestProject>true</IsTestProject>
-    <AssemblyName>$(MSBuildProjectName)</AssemblyName>
-    <RootNamespace>$(MSBuildProjectName)</RootNamespace>
-    <PackageId />
-    <Title>$(AssemblyName)</Title>
-    <Authors>Alek Davis</Authors>
-    <Description>Unit tests.</Description>
-    <Copyright>© 2025 Alek Davis</Copyright>
-    <PackageProjectUrl>https://github.com/alekdavis/DotNetExtras.Common</PackageProjectUrl>
-    <PackageReadmeFile>README.md</PackageReadmeFile>
-    <RepositoryUrl>https://github.com/alekdavis/DotNetExtras.git</RepositoryUrl>
-    <PackageTags>.net;utilities;helpers;library;classes;tools;toolbox;unit;tests;xunit</PackageTags>
   </PropertyGroup>
 
   <ItemGroup>

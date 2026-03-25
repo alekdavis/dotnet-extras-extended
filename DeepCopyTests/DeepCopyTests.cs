@@ -1,4 +1,4 @@
-using Force.DeepCloner;
+// Ignore Spelling: Cloner
 
 namespace DeepCopyTest
 {
@@ -39,6 +39,14 @@ namespace DeepCopyTest
         }
 
         [Fact]
+        public void Test_FastCloner()
+        {
+            // FastDeepCloner
+            Microsoft.Graph.Models.User clone = FastCloner.FastCloner.DeepClone(_graphUser)!;
+            Validate(_graphUser, clone);
+        }
+
+        [Fact]
         public void Test_FastDeepCloner()
         {
             // FastDeepCloner
@@ -50,7 +58,7 @@ namespace DeepCopyTest
         public void Test_DeepCloner()
         {
             // DeepCloner
-            Microsoft.Graph.Models.User clone = DeepClonerExtensions.DeepClone<Microsoft.Graph.Models.User>(_graphUser);
+            Microsoft.Graph.Models.User clone = Force.DeepCloner.DeepClonerExtensions.DeepClone<Microsoft.Graph.Models.User>(_graphUser);
             Validate(_graphUser, clone);
         }
 
