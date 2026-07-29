@@ -6,7 +6,7 @@
     <Nullable>enable</Nullable>
     <AssemblyName>DotNetExtras.Extended</AssemblyName>
     <RootNamespace>DotNetExtras.Extended</RootNamespace>
-    <Version>1.0.8</Version>
+    <Version>1.0.9</Version>
     <Title>$(AssemblyName)</Title>
     <Authors>Alek Davis</Authors>
     <Description>A .NET Core library implementing less frequently used general-purpose operations.</Description>
@@ -32,7 +32,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="DotNetExtras.Common" Version="1.0.22" />
+    <PackageReference Include="DotNetExtras.Common" Version="1.0.24" />
     <PackageReference Include="FastCloner" Version="3.5.5" />
   </ItemGroup>
 
